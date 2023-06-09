@@ -2,3 +2,9 @@ language: python
 
 postgresql:
   enabled: false
+
+webapp:
+  podAnnotations:
+    qonto.co/monitoring.priority: P3
+    qonto.co/monitoring.service: airbyte
+    "cluster-autoscaler.kubernetes.io/safe-to-evict": "false"
