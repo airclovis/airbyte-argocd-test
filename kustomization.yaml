@@ -1,0 +1,8 @@
+helmCharts:
+  - name: airbyte
+    releaseName: airbyte
+    version: 0.42.0
+    repo: https://airbytehq.github.io/helm-charts
+
+commonLabels:
+  app.kubernetes.io/part-of: airbyte
